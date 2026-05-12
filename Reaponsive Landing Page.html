@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Landing Page</title>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      padding: 80px 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    header button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 50px;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    header button:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 60px 20px;
+    }
+
+    .feature {
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.2);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    /* About */
+    .about {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    /* Contact */
+    .contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255,255,255,0.1);
+      color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ccc;
+    }
+
+    button.submit-btn {
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button.submit-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header data-aos="fade-up">
+    <h1>Start Building a Successful Career with Our Internship Program</h1>
+    <button>Get Started</button>
+  </header>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+      <h3>Hands-on Experience</h3>
+      <p>Work on real-world projects to build your skills.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+      <h3>Expert Mentors</h3>
+      <p>Learn from industry professionals and experts.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="300">
+      <h3>Flexible Learning</h3>
+      <p>Access content anytime, anywhere at your pace.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" data-aos="fade-right">
+    <h2>About Us</h2>
+    <p>We provide top-quality internship opportunities to help students gain real-world experience and boost their careers.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" data-aos="zoom-in">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button class="submit-btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>© 2026 Internship Program</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
